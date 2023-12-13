@@ -13,7 +13,7 @@ include_once __DIR__ . "/function.php"
 <body>
     <div class="container">
 
-    <form action="function.php" method="POST">
+    <form action="index.php" method="POST">
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
@@ -23,6 +23,7 @@ include_once __DIR__ . "/function.php"
        
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
     </div>
 </body>
 </html>
