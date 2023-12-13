@@ -1,8 +1,10 @@
 <?php
 
-if (isset ($_POST['email'])) {
-echo 'la tua email è valida'; 
-die;   
+if (isset ($_POST['email']) && str_contains($_POST['email'], '@') && str_contains($_POST['email'], '.')){
+$your_email = $_POST['email'];
+header('Location: ./success.php');
+} else {
+    header('Location: ./danger.php');
 }
 
 
