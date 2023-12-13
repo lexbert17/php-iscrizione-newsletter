@@ -1,11 +1,6 @@
 <?php
-if (isset ($_POST['email'])) {
-echo 'la tua email è valida'; 
-
-    
-}
+include_once __DIR__ . "/function.php"
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +13,7 @@ echo 'la tua email è valida';
 <body>
     <div class="container">
 
-    <form action="index.php" method="POST">
+    <form action="function.php" method="POST">
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
